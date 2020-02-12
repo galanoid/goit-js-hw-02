@@ -11,8 +11,5 @@ do {
     }
 } while (input !== null);
 
-numbers.forEach(element => {
-    total += element;
-});
-
+total = numbers.reduce((a, b) => a + b);
 console.log('Общая сумма чисел равна', total)
